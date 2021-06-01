@@ -25,13 +25,13 @@ jobs:
         docker run rp
         ret_rp=$?
         echo "rp   : $ret_rp"
-        docker run flux
+        # docker run flux
         ret_flux=$?
-        echo "flu x: $ret_flux"
-        docker run swift-t
+        echo "flux : $ret_flux"
+        # docker run swift-t
         ret_swift=$?
         echo "swift: $ret_swift"
-        docker run parsl
+        # docker run parsl
         ret_parsl=$?
         echo "parsl: $ret_parsl"
         echo "exit : $(expr $ret_rp + $ret_flux + $ret_swift + $ret_parsl)"
